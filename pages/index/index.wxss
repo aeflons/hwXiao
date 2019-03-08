@@ -1,0 +1,74 @@
+/**index.wxss**/
+swiper-item{
+  height: 400rpx;
+  width: 100%
+}
+.swiper-image{
+  width: 100%;
+  height: 100%
+}
+.content{
+   padding:20rpx 0 0 20rpx; 
+   float: left
+}
+.pro_image{
+   width: 250rpx;
+   height: 250rpx;
+}
+.pro_f{
+  float: left;
+}
+.pro_r{
+  display: block;
+  float: left;
+  margin-left: 30rpx
+}
+.detail_img{
+  float: left;
+  width: 180rpx;
+  height: 55rpx;
+  margin-right: 20rpx
+}
+.ask_img{
+    width: 180rpx;
+    height: 55rpx;
+    float: left;
+}
+.button_ask{
+  float: left;
+  width: 180rpx;
+  height: 55rpx;
+  border:none;
+  background: none;
+  padding:0;
+  margin: 0 
+  
+}
+.pro_second_cont{
+   color:#9a9a9a;
+   font-size: 30rpx
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

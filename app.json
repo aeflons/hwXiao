@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/join/join",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/login/setting/set"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#009400",
+    "navigationBarTitleText": "家俱城",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "white",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#9a9a9a",
+    "selectedColor": "#009400",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_home_normal.png",
+        "selectedIconPath": "images/ic_home_pressed.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "购物车",
+        "iconPath": "images/car.png",
+        "selectedIconPath": "images/car_pressed.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "images/login.png",
+        "selectedIconPath": "images/login_pressed.png"
+      }
+    ]
+  }
+}

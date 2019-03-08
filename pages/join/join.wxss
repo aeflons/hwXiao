@@ -1,0 +1,52 @@
+/* pages/join/join.wxss */
+.join_img{
+  margin: 0 auto;
+}
+.about_img{
+  height: 300rpx;
+  width: 750rpx
+}
+
+.join_cont{
+  border-top:10rpx #f1f1f0 solid;
+  padding: 50rpx;
+  
+}
+.join_cont::after{
+  display: block;
+  content: '';
+  clear: both
+}
+.c_title{
+  float: left;
+  
+}
+.l_title{
+  float: left;
+  height: 30rpx;
+  width: 8rpx;
+  background-color: #2e5e82;
+  margin-right: 10rpx
+}
+.r_title{
+  float: left;
+  height: 30rpx;
+  line-height: 28rpx;
+  font-size: 30rpx;
+  color:#2e5e82;
+  font-weight: bold
+}
+
+.c_cont{
+  padding: 15rpx;
+   float: left;
+   color:#5d5d5c;
+   font-size: 30rpx
+
+}
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+/* pages/detail/detail.wxss */
+.detail{
+  padding: 20rpx;
+  font-size: 30rpx;
+  text-indent: 25rpx
+}
+
+
+
