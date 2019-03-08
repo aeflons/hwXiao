@@ -36,6 +36,23 @@ Page({
       },{
         icon: '../../images/推广码.png',
         text: '我的推广码'
+      }],
+
+      listStatus:[{
+        icon:'../../images/优惠券.png',
+          text:"待付款"
+      },{
+          icon: '../../images/优惠券.png',
+          text: "待发货"
+      },{
+          icon: '../../images/优惠券.png',
+        text: "待收货"
+      },{
+          icon: '../../images/优惠券.png',
+        text: "待评价"
+      },{
+          icon: '../../images/优惠券.png',
+        text: "退换/售后"
       }]
   },
    jumpSetting:function(){
