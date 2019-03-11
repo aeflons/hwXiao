@@ -39,4 +39,6 @@
       </view>
     </block>
   </view>
+   <view class="loadmore loading">加载更多</view>
+
 </view>
