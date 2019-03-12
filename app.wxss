@@ -40,3 +40,8 @@ background-color: rgba(0,148,0,1);
           }
         }
 
+        .common_text_font_size{
+          font-size: 14px;
+        }
+        
+

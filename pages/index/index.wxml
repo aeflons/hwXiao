@@ -1,38 +1,74 @@
 <!--index.wxml-->
 <view>
-<view class='aeui-search-bar'>
-<view class='aeui-search-bar_box'>
-<input class='aeui-search-bar_input' type='text' placeholder="搜索"></input>
-<icon class='aeui-search-bar_icon'  bindinput="searchTyping" type="search" color='#ffffff' size="18"></icon>
-</view>
-</view>
-
-<swiper indicator-dots="true" circular="true" autoplay='true' display-multiple-items="1" >
-    <swiper-item wx:for="{{index_swiper}}" wx:for-item="v">
-        <image class='swiper-image' src="{{v.img}}"></image>
-    </swiper-item>
-</swiper>
-
-<view wx:for="{{userInfo}}" wx:for-index="key" wx:for-item="vo">
-  <view class='content'>
-    <view class='pro_f'>
-      <image class="pro_image" src="{{vo.img}}"></image>
-    </view>
-    <view   class="pro_r"> 
-      <view>
-        <view class="pro_first_cont">{{vo.title}}</view>
-        <text class="pro_second_cont">{{vo.cont}}</text><!--可以识别换行符号-->
-        <view>
-            <image class="detail_img" data-id="{{vo.title}}" src='/images/btn_detail.png' bindtap='jumpNewPage'></image>
-            <button open-type='contact' class='button_ask'>
-                <image class="ask_img" bindtap='askPage' src='/images/btn_ask.png'></image>
-            </button>
-            
-        </view>
-      </view>
+  <view class='aeui-search-bar'>
+    <view class='aeui-search-bar_box'>
+    <input class='aeui-search-bar_input' type='text' placeholder="搜索"></input>
+    <icon class='aeui-search-bar_icon'  bindinput="searchTyping" type="search" color='#ffffff' size="18"></icon>
     </view>
   </view>
+
+  <swiper indicator-dots="true" circular="true" autoplay='true' display-multiple-items="1" >
+      <swiper-item wx:for="{{index_swiper}}" wx:for-item="v">
+          <image class='swiper-image' src="{{v.img}}"></image>
+      </swiper-item>
+  </swiper>
+<!-- 系列界面 -->
+<view class='listSeries'>
+  <block wx:for="{{listSeries}}" wx:key="*this">
+    <navigator url="" class="aeui-grid" hover-class="aeui-grid_active">
+        <image class="aeui-grid__icon" src="{{item.icon}}" />
+        <view class="aeui-grid__label">{{item.text}}</view>
+    </navigator>
+  </block>
 </view>
+<!-- 推荐分区 -->
+      <view class='comment'>
+      <view class='commmet_icon'><image src="../../images/car.png"></image>
+      </view>
+      <view class='personComment common_text_font_size'>店长推荐</view>
+      <view class='more common_text_font_size'>更多</view>
+      </view>
+      <view class='comment-shop-List'>
+      <view wx:for="{{userInfo}}" wx:for-index="key" wx:for-item="vo">
+          <view class='content'>
+            <view class='pro_f'>
+              <image class="pro_image" src="{{vo.img}}"></image>
+            </view>
+              <view   class="pro_r"> 
+                <view>
+                <view class="pro_first_cont">{{vo.title}}</view>
+                <text class="pro_second_cont">{{vo.cont}}</text><!--可以识别换行符号-->
+                <view>
+                    <image class="detail_img" data-id="{{vo.title}}" src='/images/btn_detail.png' bindtap='jumpNewPage'></image>
+                    <button open-type='contact' class='button_ask'>
+                        <image class="ask_img" bindtap='askPage' src='/images/btn_ask.png'></image>
+                    </button>
+                    
+                </view>
+              </view>
+            </view>
+          </view>
+        </view> 
+        </view>
+        <!--新品推荐 -->
+
+      <view class='comment'>
+      <view class='commmet_icon'><image src="../../images/car.png"></image>
+      </view>
+      <view class='personComment common_text_font_size'>新品上市</view>
+      <view class='more common_text_font_size'>更多</view>
+      </view>
+      <view class='comment_new_list'>
+       <block wx:for="{{new_comment}}" wx:for-index="key" wx:for-item="item">
+          <view class='comment_new_view'>
+            <view class='comment_new_view_image'>
+            <image src='{{item.img}}'></image>
+            </view>
+            <view class='comment_new_view_title common_text_font_size'>{{item.title}}</view>
+            <view class='comment_new_view_content  common_text_font_size'>{{item.cont}}</view>
+          </view>
+        </block>
+      </view>
 </view>
 
 

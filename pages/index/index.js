@@ -32,7 +32,103 @@ Page({
       ]
     ,
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+    listSeries: [{
+      icon: '../../images/优惠券.png',
+      text: "待付款",
+      url: "",
+    }, {
+      icon: '../../images/优惠券.png',
+      text: "待发货",
+      url: "",
+    }, {
+      icon: '../../images/优惠券.png',
+      text: "待收货",
+      url: "",
+    }, {
+      icon: '../../images/优惠券.png',
+      text: "待评价",
+      url: "",
+    }, {
+      icon: '../../images/优惠券.png',
+      text: "退换/售后",
+      url: "",
+    },
+      {
+        icon: '../../images/优惠券.png',
+        text: "待付款",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "待发货",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "待收货",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "待评价",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "退换/售后",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "待评价",
+        url: "",
+      }, {
+        icon: '../../images/优惠券.png',
+        text: "退换/售后",
+        url: "",
+      }],
+// 店长推荐
+    shop_comment:
+      [{
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷0',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      }, {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷1',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      },
+      {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷2',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      },
+      {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷2',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      }
+      ]
+    ,
+    new_comment:
+      [{
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷0',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      }, {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷1',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      },
+      {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷2',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      },
+      {
+        "img": '/images/pro_01.jpg',
+        "title": '精英贷2',
+        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+      }
+      ]
+    ,
 
   },
 
