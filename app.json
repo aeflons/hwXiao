@@ -5,7 +5,9 @@
     "pages/detail/detail",
     "pages/login/login",
     "pages/logs/logs",
-    "pages/login/setting/set"
+    "pages/login/setting/set",
+    "pages/login/collect/myCollect",
+    "pages/login/generalize/generalize"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -27,12 +29,6 @@
         "text": "首页",
         "iconPath": "images/ic_home_normal.png",
         "selectedIconPath": "images/ic_home_pressed.png"
-      },
-      {
-        "pagePath": "pages/join/join",
-        "text": "购物车",
-        "iconPath": "images/car.png",
-        "selectedIconPath": "images/car_pressed.png"
       },
       {
         "pagePath": "pages/login/login",

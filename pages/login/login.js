@@ -14,45 +14,59 @@ Page({
     userListInfo: [{
       icon: '../../images/余额.png',
       text: '我的余额',
+      url:"",
       
     }, {
         icon: '../../images/优惠券.png',
       text: '我的优惠券',
+        url: "",
     }, {
         icon: '../../images/积分.png',
-        text: '我的积分'
+        text: '我的积分',
+        url: "",
     }, {
         icon: '../../images/收藏.png',
-        text: '我的收藏'
+        text: '我的收藏',
+        url: "",
     }, {
         icon: '../../images/评论.png',
-      text: '我的评论'
+      text: '我的评论',
+        url: "",
       },{
         icon: '../../images/代理.png',
-        text: '我的代理'
+        text: '我的代理',
+        url: "",
       },{
         icon: '../../images/佣金.png',
-        text: '我的佣金'
+        text: '我的佣金', 
+        url: "",
+
       },{
         icon: '../../images/推广码.png',
-        text: '我的推广码'
+        text: '我的推广码',
+        url: "generalize/generalize",
       }],
 
       listStatus:[{
         icon:'../../images/优惠券.png',
-          text:"待付款"
+          text:"待付款",
+          url: "",
       },{
           icon: '../../images/优惠券.png',
-          text: "待发货"
+          text: "待发货",
+          url: "",
       },{
           icon: '../../images/优惠券.png',
-        text: "待收货"
+          text: "待收货",
+          url: "",
       },{
           icon: '../../images/优惠券.png',
-        text: "待评价"
+          text: "待评价",
+          url: "",
       },{
           icon: '../../images/优惠券.png',
-        text: "退换/售后"
+          text: "退换/售后",
+          url: "",
       }]
   },
    jumpSetting:function(){

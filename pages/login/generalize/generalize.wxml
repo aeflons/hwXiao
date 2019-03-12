@@ -1,0 +1,12 @@
+<!--pages/login/generalize/generalize.wxml-->
+
+<view class='controll_view'>
+<canvas 
+  canvas-id="gameCanvas" class='gameCanvas'
+></canvas>
+<button class='button_bottom' bindtap="createImage">生成图片</button>
+<view class='generalize_text'>
+<text>保存后可分享给朋友或者发朋友圈</text>
+</view>
+</view>
+

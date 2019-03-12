@@ -1,0 +1,28 @@
+/* pages/login/generalize/generalize.wxss */
+page{
+  height: 100%; 
+}
+.controll_view {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items:flex-end; */
+  
+}
+canvas{
+  width: 100%;
+  height: 89%;
+}
+.button_bottom {
+ width: 100%;
+ height: 40px;
+ background-color: cadetblue;
+ color: #ffffff;
+}
+.generalize_text{
+  font-size: 14px;
+  text-align: center;
+  margin: 2px auto;
+  color: blanchedalmond;
+}
