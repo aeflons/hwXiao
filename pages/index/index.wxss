@@ -49,9 +49,31 @@ swiper-item{
    font-size: 30rpx
 
 }
+.aeui-search-bar {
+  padding:5px 20rpx;
 
+}
+.aeui-search-bar_box{
+  display: flex;
+  justify-content: center; 
+  /* align-items: center; */
+  border-radius: 3px;
+  border: 1px solid rgb(0, 150, 0);
 
-
+}
+.aeui-search-bar_input{
+  flex: 1;
+  margin-left: 10px; 
+  font-size: 14px;
+}
+.aeui-search-bar_icon{
+  vertical-align: middle;
+ padding:10rpx 10rpx;
+  /* width: 10rpx;
+  height: 10rpx; */
+  color: white;
+  background-color:rgb(0, 150, 0);
+}
 
 
 
