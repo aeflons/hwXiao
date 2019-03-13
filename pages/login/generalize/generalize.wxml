@@ -2,7 +2,7 @@
 
 <view class='controll_view'>
 <canvas 
-  canvas-id="gameCanvas" class='gameCanvas'
+  canvas-id="gameCanvas" class='gameCanvas' id="gameCanvas"
 ></canvas>
 <button class='button_bottom' bindtap="createImage">生成图片</button>
 <view class='generalize_text'>

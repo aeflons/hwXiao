@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -58,6 +58,13 @@
 					"id": -1,
 					"name": "首页调试",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "推广",
+					"pathName": "pages/login/generalize/generalize",
 					"scene": null
 				}
 			]

@@ -93,10 +93,16 @@ Page({
       deviceHeigth = 0;
 
     //获取设备宽度，用于求所需画在画布上的图片的高度
-    wx.getSystemInfo({
-      success: function (res) {
-        deviceWidth = res.windowWidth;   //获取设备宽度
-        deviceHeigth = res.windowHeight;
+        const query = wx.createSelectorQuery();
+        query.select('#gameCanvas').boundingClientRect();
+        query.selectViewport().scrollOffset();
+        query.exec(function (resc) {
+          console.log('打印demo的元素的信息', resc[0].width);
+          console.log('打印高度', resc[0].height);
+          deviceWidth = resc[0].width;
+          deviceHeigth = resc[0].height;
+        console.log(deviceHeigth);
+        console.log(deviceWidth);
         wx.getImageInfo({    //获取图片信息
           src: _this.data.imagePath,
           success: function (res) {
@@ -106,26 +112,25 @@ Page({
               'imageWidth': imageWidth,
               'imageHeight': imageHeight
             });
-            let iconX = 60,iconY = 60, iconW = 30, iconH = 30;
+            let iconX = 60, iconY = deviceHeigth * 0.08, iconW = deviceHeigth * 0.05, iconH = deviceHeigth * 0.05;
             const ctx = wx.createCanvasContext('gameCanvas');  //创建画布对象  
-            ctx.drawImage("../../../images/分享.png",0,0,imageWidth,imageHeight);
+            ctx.drawImage("../../../images/分享.png", 0, 0, deviceWidth, deviceHeigth);
             ctx.setFontSize(16);      //设置字体大小
             ctx.setFillStyle('#0099FF');   //设置字体颜色
-            ctx.fillText(_this.data.userName, iconX + iconW  + 30 / 2, iconY + iconH - 40);  //设置字体内容、坐标
+            ctx.fillText(_this.data.userName, iconX + iconW  + 15, iconY );  //设置字体内容、坐标
             ctx.setFontSize(20);
-            ctx.fillText(_this.data.generalizText, iconX + iconW  + 30 / 2, iconY + iconH -14);  //设置字体内容、坐标
+            ctx.fillText(_this.data.generalizText, iconX + iconW  + 10, iconY + iconH);  //设置字体内容、坐标
             ctx.save();
             ctx.beginPath();
-            ctx.arc(60, 60, 30, 30, Math.PI * 2, true);
+            ctx.arc(iconX, iconY, iconW, iconH, Math.PI * 2, true);
             ctx.closePath();
             ctx.clip();
-            ctx.drawImage(_this.data.imagePath, 30, 30,60,60);  //添加图片
+            ctx.drawImage(_this.data.imagePath, iconX  - iconW,iconY - iconH, iconW * 2, iconH * 2);  //添加图片
             ctx.restore() //恢复之前保存的绘图上下文
             ctx.draw();     //开始绘画
           }
-        })
-      }
-    });
+        });
+        });
   },
   createImage: function () {
     let imageWidth = this.data.imageWidth,
