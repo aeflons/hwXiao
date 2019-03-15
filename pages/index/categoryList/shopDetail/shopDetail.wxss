@@ -1,0 +1,14 @@
+/* pages/index/categoryList/shopDetail/shopDetail.wxss */
+
+.product_detail{
+  width: 100%;
+  height: 100%;
+}
+.product_detail image {
+  width: 100%;
+  height: 400rpx;
+  margin: 0 auto;
+}
+.produce{
+  display: flex;
+}

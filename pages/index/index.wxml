@@ -39,7 +39,7 @@
                 <view class="pro_first_cont">{{vo.title}}</view>
                 <text class="pro_second_cont">{{vo.cont}}</text><!--可以识别换行符号-->
                 <view>
-                    <image class="detail_img" data-id="{{vo.title}}" src='/images/btn_detail.png' bindtap='jumpNewPage'></image>
+                    <image class="detail_img" data-user="{{vo.id}}" src='/images/btn_detail.png' bindtap='jumpNewPage'></image>
                     <button open-type='contact' class='button_ask'>
                         <image class="ask_img" bindtap='askPage' src='/images/btn_ask.png'></image>
                     </button>

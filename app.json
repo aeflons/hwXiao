@@ -7,7 +7,9 @@
     "pages/logs/logs",
     "pages/login/setting/set",
     "pages/login/collect/myCollect",
-    "pages/login/generalize/generalize"
+    "pages/login/generalize/generalize",
+    "pages/index/categoryList/category",
+    "pages/index/categoryList/shopDetail/shopDetail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
