@@ -90,55 +90,24 @@ Page({
 // 店长推荐
     shop_comment:
       [{
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷0',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      }, {
-          "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷1',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      },
-      {
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷2',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      },
-      {
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷2',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
+        "id": "2",
+        "name": "大富豪客厅",
+        "specifacal": "细腻",
+        "introduce": "非洲黄花梨",
+        "image": "http://localhost/image/banner_01.jpg",
+        "series_id": "5"
       }
       ]
     ,
     new_comment:
       [{
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷0',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      }, {
-          "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷1',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      },
-      {
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷2',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      },
-      {
-        "id": "1",
-        "img": '/images/pro_01.jpg',
-        "title": '精英贷2',
-        "cont": "22周岁即可\n最快3小时下款\n件均8万，最高20万"
-      }
-      ]
+        "id": "2",
+        "name": "大富豪客厅",
+        "specifacal": "细腻",
+        "introduce": "非洲黄花梨",
+        "image": "http://localhost/image/banner_01.jpg",
+        "series_id": "5"
+      }]
     ,
 
   },
@@ -150,7 +119,7 @@ Page({
     })
   },
   onLoad: function () {
-    
+   this.requestIndex();
   //   if (app.globalData.userInfo) {
   //     this.setData({
   //       userInfo: app.globalData.userInfo,
@@ -215,6 +184,33 @@ Page({
   askPage:function(e){
     console.log(e)
   },
- 
+
+
+ requestIndex:function(){
+   var that = this;
+   wx.request({
+     url: 'http://localhost/PHP/index.php',
+     data: '',
+     header: {},
+     method: 'GET',
+     dataType: 'json',
+     responseType: 'text',
+     success: function(res) {
+       console.log(res);
+      that.setData({
+        new_comment: res.data.data.new_comment,
+        shop_comment: res.data.data.shop_comment,
+      });
+     },
+     fail: function(res) {},
+     complete: function(res) {},
+   })
+ },
+  seriesList:function(e){
+    var id = e.target.dataset.id
+    wx.navigateTo({
+      url: "categoryList/category?series_id="+id,
+    })
+  }
  
 })
