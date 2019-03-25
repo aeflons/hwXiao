@@ -9,7 +9,7 @@
 
   <swiper indicator-dots="true" circular="true" autoplay='true' display-multiple-items="1" >
       <swiper-item wx:for="{{index_swiper}}" wx:for-item="v">
-          <image class='swiper-image' src="{{v.img}}"></image>
+          <image class='swiper-image' src="{{v.img}}" lazy-load="true"></image>
       </swiper-item>
   </swiper>
 <!-- 系列界面 -->
@@ -26,18 +26,18 @@
       <view class='commmet_icon'><image src="../../images/car.png"></image>
       </view>
       <view class='personComment common_text_font_size'>店长推荐</view>
-      <view class='more common_text_font_size'>更多</view>
+      <view class='more common_text_font_size' data-id="4" bindtap='moreFunction'>更多</view>
       </view>
       <view class='comment-shop-List'>
-      <view wx:for="{{shop_comment}}" wx:for-index="key" wx:for-item="vo">
-          <view class='content'>
+      <view wx:for="{{shop_comment}}" wx:for-index="key" wx:for-item="item" >
+          <view class='content' data-id='{{item.id}}' bindtap='seriesList'>
             <view class='pro_f'>
-              <image class="pro_image" src="{{vo.image}}"></image>
+              <image class="pro_image" src="{{item.image}}" lazy-load="true"></image>
             </view>
               <view   class="pro_r"> 
                 <view>
-                <view class="pro_first_cont">{{vo.name}}</view>
-                <text class="pro_second_cont">{{vo.introduce}}</text><!--可以识别换行符号-->
+                <view class="pro_first_cont">{{item.name}}</view>
+                <text class="pro_second_cont">{{item.introduce}}</text><!--可以识别换行符号-->
                 <!-- <view>
                     <image class="detail_img" data-user="{{vo.id}}" src='/images/btn_detail.png' bindtap='jumpNewPage'></image>
                     <button open-type='contact' class='button_ask'>
@@ -56,11 +56,11 @@
       <view class='commmet_icon'><image src="../../images/car.png"></image>
       </view>
       <view class='personComment common_text_font_size'>新品上市</view>
-      <view class='more common_text_font_size'>更多</view>
+      <view class='more common_text_font_size' data-id="5" bindtap='moreFunction' >更多</view>
       </view>
       <view class='comment_new_list' >
        <block wx:for="{{new_comment}}" wx:for-index="key" wx:for-item="item">
-          <view class='comment_new_view' data-id='{{item.series_id}}' bindtap='seriesList'>
+          <view class='comment_new_view' data-id='{{item.id}}' bindtap='seriesList'>
             <view class='comment_new_view_image'>
             <image src='{{item.image}}'></image>
             </view>

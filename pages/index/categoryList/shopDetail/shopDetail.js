@@ -8,10 +8,6 @@ Page({
     product_image:"../../../../images/2102.jpg",
     product_introduce:"22周岁即可\n最快3小时下款\n件均8万，最高20万",
     product_specif:"22周岁即可\n最快3小时下款\n件均8万，最高20万",
-    userData:{
-      name:"",
-      password:''
-    }
   },
 
   /**
@@ -75,20 +71,19 @@ Page({
   /**
    * 获取详情
    */
-  requestDetail:function(e){
+  requestDetail:function(id){
     var that = this;
     console.log('123');
       wx.request({
-      url: 'http://localhost/PHP/login.php?id='+ e,
+        url: 'http://localhost/PHP/shopDetail.php?id='+ id,
       data: '',
       header: {},
       method: 'GET',
       dataType: 'json',
       responseType: 'text',
       success: function(res) {
-        console.log(res.data.info.username);
         that.setData({
-          userData: res.data.info,
+         
         })
         
       },

@@ -39,12 +39,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 3,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "join",
-					"pathName": "pages/join/join",
+					"pathName": "pages/index/categoryList/category",
 					"query": "",
 					"scene": null
 				},
@@ -65,7 +65,7 @@
 				{
 					"id": 3,
 					"name": "详情",
-					"pathName": "pages/index/categoryList/shopDetail/shopDetail",
+					"pathName": "pages/index/categoryList/category",
 					"query": "",
 					"scene": null
 				},

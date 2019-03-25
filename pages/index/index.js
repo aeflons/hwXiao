@@ -41,7 +41,8 @@ Page({
       icon: '../../images/优惠券.png',
       text: "待付款",
       url: "",
-    }, {
+    }
+    , {
       icon: '../../images/优惠券.png',
       text: "待发货",
       url: "",
@@ -86,7 +87,8 @@ Page({
         icon: '../../images/优惠券.png',
         text: "退换/售后",
         url: "",
-      }],
+      }
+      ],
 // 店长推荐
     shop_comment:
       [{
@@ -94,7 +96,7 @@ Page({
         "name": "大富豪客厅",
         "specifacal": "细腻",
         "introduce": "非洲黄花梨",
-        "image": "http://localhost/image/banner_01.jpg",
+        "image": "",
         "series_id": "5"
       }
       ]
@@ -105,7 +107,7 @@ Page({
         "name": "大富豪客厅",
         "specifacal": "细腻",
         "introduce": "非洲黄花梨",
-        "image": "http://localhost/image/banner_01.jpg",
+        "image": "",
         "series_id": "5"
       }]
     ,
@@ -119,7 +121,7 @@ Page({
     })
   },
   onLoad: function () {
-   this.requestIndex();
+    this.requestIndex(); 
   //   if (app.globalData.userInfo) {
   //     this.setData({
   //       userInfo: app.globalData.userInfo,
@@ -185,7 +187,9 @@ Page({
     console.log(e)
   },
 
+onReachBottom(){
 
+},
  requestIndex:function(){
    var that = this;
    wx.request({
@@ -209,7 +213,13 @@ Page({
   seriesList:function(e){
     var id = e.target.dataset.id
     wx.navigateTo({
-      url: "categoryList/category?series_id="+id,
+      url: "categoryList/shopDetail/shopDetail?id="+id,
+    })
+  },
+  moreFunction:function(e){
+    var id = e.target.dataset.id
+    wx.navigateTo({
+      url: "categoryList/category?series_id=" + id,
     })
   }
  
