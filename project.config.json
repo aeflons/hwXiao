@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -63,7 +63,7 @@
 					"scene": null
 				},
 				{
-					"id": 3,
+					"id": -1,
 					"name": "详情",
 					"pathName": "pages/index/categoryList/category",
 					"query": "",
@@ -71,8 +71,8 @@
 				},
 				{
 					"id": -1,
-					"name": "详情",
-					"pathName": "pages/index/categoryList/category",
+					"name": "地图",
+					"pathName": "pages/login/map/map",
 					"query": "",
 					"scene": null
 				}

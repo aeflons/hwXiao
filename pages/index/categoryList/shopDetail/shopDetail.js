@@ -5,9 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    product_image:"../../../../images/2102.jpg",
-    product_introduce:"22周岁即可\n最快3小时下款\n件均8万，最高20万",
-    product_specif:"22周岁即可\n最快3小时下款\n件均8万，最高20万",
+    
+    "id": "",
+    "name": "大富豪客厅",
+    "specifacal": "细腻",
+    "introduce": "非洲黄花梨",
+    "image": "http://localhost/image/banner_01.jpg",
+    "series_id": "4",
+    "type": "1"
+   
   },
 
   /**
@@ -73,7 +79,6 @@ Page({
    */
   requestDetail:function(id){
     var that = this;
-    console.log('123');
       wx.request({
         url: 'http://localhost/PHP/shopDetail.php?id='+ id,
       data: '',
@@ -82,8 +87,9 @@ Page({
       dataType: 'json',
       responseType: 'text',
       success: function(res) {
+        console.log(res.data);
         that.setData({
-         
+        data:res.data.data,
         })
         
       },
@@ -92,7 +98,7 @@ Page({
 
       },
       complete: function(res) {
-        console.log(res);
+     
 
       },
     })

@@ -11,37 +11,44 @@ Page({
       role:"vip",
     },
     projectSource: 'https://github.com/liuxuanqiang/wechat-weapp-mall',
-    userListInfo: [{
-      icon: '../../images/余额.png',
-      text: '我的余额',
-      url:"",
+    userListInfo: [
+    //   {
+    //   icon: '../../images/余额.png',
+    //   text: '我的余额',
+    //   url:"",
       
-    }, {
-        icon: '../../images/优惠券.png',
-      text: '我的优惠券',
-        url: "",
-    }, {
-        icon: '../../images/积分.png',
-        text: '我的积分',
-        url: "",
-    }, {
+    // }, 
+    // {
+    //     icon: '../../images/优惠券.png',
+    //   text: '我的优惠券',
+    //     url: "",
+    // }, 
+    // {
+    //     icon: '../../images/积分.png',
+    //     text: '我的积分',
+    //     url: "",
+    // }, 
+    {
         icon: '../../images/收藏.png',
         text: '我的收藏',
         url: "",
-    }, {
-        icon: '../../images/评论.png',
-      text: '我的评论',
-        url: "",
-      },{
-        icon: '../../images/代理.png',
-        text: '我的代理',
-        url: "",
-      },{
+    }, 
+    // {
+    //     icon: '../../images/评论.png',
+    //   text: '我的评论',
+    //     url: "",
+    //   },{
+    //     icon: '../../images/代理.png',
+    //     text: '我的代理',
+    //     url: "",
+    //   },
+    {
         icon: '../../images/佣金.png',
-        text: '我的佣金', 
-        url: "",
+        text: '联系我们', 
+        url: "map/map",
 
-      },{
+      },
+      {
         icon: '../../images/推广码.png',
         text: '我的推广码',
         url: "generalize/generalize",

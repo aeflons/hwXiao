@@ -1,0 +1,22 @@
+/* pages/login/map/map.wxss */
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.map{
+  height: 100%;
+  width: 100%;
+}
+.map map{
+  height: 100%;
+  width: 100%;
+}
+page{
+  height: 100%;
+}

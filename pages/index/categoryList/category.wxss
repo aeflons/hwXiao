@@ -11,6 +11,7 @@ page{
   
 }
 
+
 .tab-h{
     height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #F7F7F7; font-size: 16px; white-space: nowrap;position: fixed;top: 0; left: 0; z-index: 99;}
 .tab-item{margin:0 36rpx;display: inline-block;}
@@ -24,4 +25,4 @@ page{
 .expertInfo .name{font-size: 16px;color:#000;margin-bottom: 6px;}
 .askBtn{ width: 120rpx;height: 60rpx;line-height: 60rpx;text-align: center;font-size: 14px; border-radius: 60rpx;border: 1px solid #4675F9; color:#4675F9;}
 .tab-content{margin-top: 0rpx; height: 100%}
-.scoll-h{height: 100%;}
+.scoll-h{height: 100%;width: 100%}

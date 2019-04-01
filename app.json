@@ -9,7 +9,8 @@
     "pages/login/collect/myCollect",
     "pages/login/generalize/generalize",
     "pages/index/categoryList/category",
-    "pages/index/categoryList/shopDetail/shopDetail"
+    "pages/index/categoryList/shopDetail/shopDetail",
+    "pages/login/map/map"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -10,26 +10,29 @@
         <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
         <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view>
     </scroll-view> -->
-    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
-  >
-        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+    <!-- <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" -->
+        <!-- <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}"> -->
             <scroll-view scroll-y="true" class="scoll-h" bindscrolltolower="onScrollViewReachBottom" lower-threshold="100rpx" >
-                <block wx:for="{{shop_list}}" wx:key="*this" wx:for-index="key" wx:for-item="item">
-                    <view class="item-ans">
+                <block wx:for="{{shop_list}}"  wx:key="{{item.id}}" wx:for-item="item">
+                    <view class="item-ans" data-id="{{item.id}}" bindtap='gotoDetail'>
                         <view class="avatar">
                             <image class="img" src="../../../images/2102.jpg" lazy-load='true'></image>
                         </view>
                         <view class="expertInfo">
-                            <view class="name">{{item.name}}</view>
+                            <view class="name">{{item.id}}</view>
                             <text class="tag">{{item.introduce}}</text>
                             <!-- <view class="answerHistory">134个回答，2234人听过 </view> -->
                         </view>
                         <!-- <navigator url="/pages/askExpert/expertDetail" class="askBtn">问TA</navigator>  -->
                     </view>
                 </block>
+                 <view class="loadmore loading" wx:if="{{ hasMore }}">正在加载...</view>
+                 <view class="loadmore" wx:else>没有更多</view>
             </scroll-view>
-        </swiper-item>
-    </swiper>
+        <!-- </swiper-item> -->
+       
+    <!-- </swiper> -->
+    
 </view>
 
  

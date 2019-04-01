@@ -69,6 +69,11 @@
           </view>
         </block>
       </view>
+      <view>
+      <view class='common_text_font_size'>王经理</view>
+      <view class='common_text_font_size'>电话:1234567890</view>
+      </view>
+
 </view>
 
 

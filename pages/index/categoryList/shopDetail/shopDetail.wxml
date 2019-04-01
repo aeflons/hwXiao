@@ -2,9 +2,9 @@
 <view>
  <view>
   <view class='product_detail'>
-  <image src='{{product_image}}'></image>
+  <image src='{{image}}'></image>
   </view>
-  <text class='produce common_text_font_size'>{{product_introduce}}</text>
-  <text class='produce common_text_font_size'>{{product_specif}}</text>
+  <text class='produce common_text_font_size'>{{specifacal}}</text>
+  <text class='produce common_text_font_size'>{{introduce}}</text>
  </view>
 </view>

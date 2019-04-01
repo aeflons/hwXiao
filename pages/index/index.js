@@ -59,35 +59,35 @@ Page({
       text: "退换/售后",
       url: "",
     },
-      {
-        icon: '../../images/优惠券.png',
-        text: "待付款",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "待发货",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "待收货",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "待评价",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "退换/售后",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "待评价",
-        url: "",
-      }, {
-        icon: '../../images/优惠券.png',
-        text: "退换/售后",
-        url: "",
-      }
+    //   {
+    //     icon: '../../images/优惠券.png',
+    //     text: "待付款",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "待发货",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "待收货",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "待评价",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "退换/售后",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "待评价",
+    //     url: "",
+    //   }, {
+    //     icon: '../../images/优惠券.png',
+    //     text: "退换/售后",
+    //     url: "",
+    //   }
       ],
 // 店长推荐
     shop_comment:

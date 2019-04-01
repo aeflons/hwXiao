@@ -1,38 +1,38 @@
 <!--pages/login/login.wxml-->
 <view class='page'>
- <view class="user"> 
-  <view class="headIcon">
-        <image src="{{userInfo.icon}}"></image>
-  </view>
-  <view class='userInfo aeui-vertical-lables'>
-  <view class="aeui-label">{{userInfo.name}}</view>
-  <view class="aeui-label">{{userInfo.role}}</view>
-</view>  
-<navigator  class='setnavigator' url="setting/set">
-<view class='backImage'>
-<image src="../../images/login.png"></image>
-</view>
-<view class='aeui-label'>设置</view>
-</navigator>
-  <view class="setting">
-  <view></view>
-  </view>
+    <view class="user"> 
+      <view class="headIcon">
+            <image src="{{userInfo.icon}}"></image>
+      </view>
+      <view class='userInfo aeui-vertical-lables'>
+      <view class="aeui-label">{{userInfo.name}}</view>
+      <view class="aeui-label">{{userInfo.role}}</view>
+    </view>  
+      <!-- <navigator  class='setnavigator' url="setting/set">
+      <view class='backImage'>
+      <image src="../../images/login.png"></image>
+      </view>
+      <view class='aeui-label'>设置</view>
+      </navigator>
+      <view class="setting">
+      <view></view>
+      </view> -->
  </view>
- <view class=''>
+ <!-- <view class=''>
    <navigator  class="weui-cell weui-cell_access" hover-class="weui-cell_active " open-type="navigate">
 
      <view class="weui-cell__bd commentTextFont">我的订单</view>
      <view class="weui-cell__ft weui-cell__ft_in-access commentTextFont">全部订单</view>
      </navigator>
- </view>
-<view class='listStatus'>
+ </view> -->
+<!-- <view class='listStatus'>
   <block wx:for="{{listStatus}}" wx:key="*this">
     <navigator url="" class="aeui-grid" hover-class="aeui-grid_active">
         <image class="aeui-grid__icon" src="{{item.icon}}" />
         <view class="aeui-grid__label">{{item.text}}</view>
     </navigator>
   </block>
-</view>
+</view> -->
 
  <view class="listInfo"> </view>
  <view class="info_list">
@@ -48,6 +48,6 @@
       </view>
     </block>
   </view>
-   <view class="loadmore loading">加载更多</view>
+   <!-- <view class="loadmore loading">加载更多</view> -->
 
 </view>
